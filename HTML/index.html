@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Vengatesh Portfolio</title>
+<link rel="stylesheet" href="./style.css">
+<script>
+  function form1(){
+
+    var user = document.getElementById("user_name").value
+    var email=document.getElementById("user_email").value
+    var subject = document.getElementById("subject").value
+    var message = document.getElementById("message").value
+    if (user ==''){
+      alert("Enter Your Name")
+    }
+    
+    else if (email ==''){
+      alert("Please Enter Your Email")
+    }else if (subject ==''){
+      alert("Please Enter Subject")
+    }
+    else if (message ==''){
+      alert("Message can't be Empty")
+    }
+    else{
+
+      document.getElementById("para").innerHTML ="Hello "+ user.toUpperCase() + " your message has been Recieved"
+      // alert("Hello "+user.toUpperCase()+" your message has been Recieved, Our Team will Contact You shortly Thank You!")
+    }
+
+
+  }
+
+
+
+  function change_theme2(){
+
+        document.getElementById("logo2").style.visibility = "Hidden"
+        document.getElementById("logo1").style.visibility = "visible"
+        document.getElementById("home").style.backgroundImage = 'url(./vengat_background.png)'
+        document.getElementById("nav-link1").style.backgroundColor = 'black'
+        document.getElementById("nav-link2").style.backgroundColor = 'black'
+        document.getElementById("nav-link3").style.backgroundColor = 'black'
+        document.getElementById("nav-link4").style.backgroundColor = 'black'
+        document.getElementById("nav-link5").style.backgroundColor = 'black'
+        document.getElementById("nav-link6").style.backgroundColor = 'black'
+        document.getElementById("nav-link7").style.backgroundColor = 'black'
+
+        document.getElementById("home_para").style.color = 'white'
+        document.getElementById("h1").style.textShadow = ' 1px 1px 1px white'
+        document.getElementById("bn1").style.border= '2px solid white'
+        document.getElementById("bn2").style.border= '2px solid white'
+        document.getElementById("bn3").style.border= '2px solid white'
+        document.getElementById("bn4").style.border= '2px solid white'
+        document.getElementById("bn5").style.border= '2px solid white'
+        document.getElementById("bn6").style.border= '2px solid white'
+        document.getElementById("bn7").style.border= '2px solid white'
+        document.getElementById("bn1").style.backgroundColor= 'white'
+        document.getElementById("bn2").style.backgroundColor= 'white'
+        document.getElementById("bn3").style.backgroundColor= 'white'
+        document.getElementById("bn4").style.backgroundColor= 'white'
+        document.getElementById("bn5").style.backgroundColor= 'white'
+        document.getElementById("bn6").style.backgroundColor= 'white'
+        document.getElementById("bn7").style.backgroundColor= 'white'
+        document.getElementById("bn1").style.color= 'black'
+        document.getElementById("bn2").style.color= 'black'
+        document.getElementById("bn3").style.color= 'black'
+        document.getElementById("bn4").style.color= 'black'
+        document.getElementById("bn5").style.color= 'black'
+        document.getElementById("bn6").style.color= 'black'
+        document.getElementById("bn7").style.color= 'black'
+        
+        // Aboout
+        document.getElementById("about").style.backgroundColor= 'black'
+        document.getElementById("about_right").style.color= 'white'
+        document.getElementById("Name2").style.color= 'white'
+document.getElementById("Dob2").style.color= 'white'
+document.getElementById("Phone2").style.color= 'white'
+document.getElementById("Email2").style.color= 'white'
+document.getElementById("Add2").style.color= 'white'
+
+
+    // resume
+document.getElementById("resume").style.backgroundColor= 'black'
+document.getElementById("q1").style.color= 'white'
+document.getElementById("q2").style.color= 'white'
+document.getElementById("clg1").style.color= 'white'
+document.getElementById("clg2").style.color= 'white'
+document.getElementById("sch1").style.color= 'white'
+document.getElementById("sch2").style.color= 'white'
+document.getElementById("sch11").style.color= 'white'
+document.getElementById("sch12").style.color= 'white'
+
+
+// Template
+document.getElementById("template").style.backgroundColor= 'black'
+
+ // Project
+ document.getElementById("project").style.backgroundColor= 'black'
+document.getElementById("pro11").style.color= 'white'
+document.getElementById("pro1").style.color= 'white'
+document.getElementById("pro2").style.color= 'white'
+document.getElementById("pro21").style.color= 'white'
+document.getElementById("pro3").style.color= 'white'
+document.getElementById("pro31").style.color= 'white'
+document.getElementById("pro41").style.color= 'white'
+document.getElementById("pro4").style.color= 'white'
+
+
+// Skill 
+document.getElementById("skill").style.backgroundColor= 'black'
+document.getElementById("skill1").style.color= 'white'
+document.getElementById("skill2").style.color= 'white'
+document.getElementById("skill3").style.color= 'white'
+document.getElementById("skill4").style.color= 'white'
+document.getElementById("skill5").style.color= 'white'
+document.getElementById("skill6").style.color= 'white'
+document.getElementById("skill7").style.color= 'white'
+document.getElementById("skill8").style.color= 'white'
+
+
+  }
+  function change_theme1(){
+
+document.getElementById("logo1").style.visibility = "Hidden"
+document.getElementById("logo2").style.visibility = "visible"
+document.getElementById("home").style.backgroundImage = "url(./vengat_white_background.png)"
+document.getElementById("nav-link1").style.backgroundColor = 'white'
+document.getElementById("nav-link2").style.backgroundColor = 'white'
+document.getElementById("nav-link3").style.backgroundColor = 'white'
+document.getElementById("nav-link4").style.backgroundColor = 'white'
+document.getElementById("nav-link5").style.backgroundColor = 'white'
+document.getElementById("nav-link6").style.backgroundColor = 'white'
+document.getElementById("nav-link7").style.backgroundColor = 'white'
+
+document.getElementById("home_para").style.color = 'black'
+document.getElementById("home_para").style.textShadow = 'none'
+document.getElementById("h1").style.textShadow = ' 1px 1px 1px black'
+document.getElementById("bn1").style.border= '2px solid black'
+document.getElementById("bn2").style.border= '2px solid black'
+document.getElementById("bn3").style.border= '2px solid black'
+document.getElementById("bn4").style.border= '2px solid black'
+document.getElementById("bn5").style.border= '2px solid black'
+document.getElementById("bn6").style.border= '2px solid black'
+document.getElementById("bn7").style.border= '2px solid black'
+document.getElementById("bn1").style.backgroundColor= 'black'
+document.getElementById("bn2").style.backgroundColor= 'black'
+document.getElementById("bn3").style.backgroundColor= 'black'
+document.getElementById("bn4").style.backgroundColor= 'black'
+document.getElementById("bn5").style.backgroundColor= 'black'
+document.getElementById("bn6").style.backgroundColor= 'black'
+document.getElementById("bn7").style.backgroundColor= 'black'
+document.getElementById("bn1").style.color= 'white'
+document.getElementById("bn2").style.color= 'white'
+document.getElementById("bn3").style.color= 'white'
+document.getElementById("bn4").style.color= 'white'
+document.getElementById("bn5").style.color= 'white'
+document.getElementById("bn6").style.color= 'white'
+document.getElementById("bn7").style.color= 'white'
+
+// About
+document.getElementById("about").style.backgroundColor= 'aliceblue'
+document.getElementById("about_right").style.color= 'black'
+document.getElementById("Name2").style.color= '#333'
+document.getElementById("Dob2").style.color= '#333'
+document.getElementById("Phone2").style.color= '#333'
+document.getElementById("Email2").style.color= '#333'
+document.getElementById("Add2").style.color= '#333'
+
+// Resume
+document.getElementById("resume").style.backgroundColor= 'white'
+document.getElementById("q1").style.color= 'black'
+document.getElementById("q2").style.color= 'black'
+document.getElementById("clg1").style.color= 'black'
+document.getElementById("clg2").style.color= 'black'
+document.getElementById("sch1").style.color= 'black'
+document.getElementById("sch2").style.color= 'black'
+document.getElementById("sch11").style.color= 'black'
+document.getElementById("sch12").style.color= 'black'
+
+// Template
+document.getElementById("template").style.backgroundColor= 'aliceblue'
+
+
+// Project
+document.getElementById("project").style.backgroundColor= 'white'
+document.getElementById("pro11").style.color= 'black'
+document.getElementById("pro1").style.color= 'black'
+document.getElementById("pro21").style.color= 'black'
+document.getElementById("pro2").style.color= 'black'
+document.getElementById("pro31").style.color= 'black'
+document.getElementById("pro3").style.color= 'black'
+document.getElementById("pro41").style.color= 'black'
+document.getElementById("pro4").style.color= 'black'
+
+// Skill 
+document.getElementById("skill").style.backgroundColor= 'aliceblue'
+document.getElementById("skill1").style.color= '#ff00ee'
+document.getElementById("skill2").style.color= '#ff00ee'
+document.getElementById("skill3").style.color= '#ff00ee'
+document.getElementById("skill4").style.color= '#ff00ee'
+document.getElementById("skill5").style.color= '#ff00ee'
+document.getElementById("skill6").style.color= '#ff00ee'
+document.getElementById("skill7").style.color= '#ff00ee'
+document.getElementById("skill8").style.color= '#ff00ee'
+
+
+
+
+
+}
+</script>
+</head>
+<body>
+<nav>
+  <button onclick="change_theme1()" id="logo1" class="logo"><i class="fa-solid fa-user"></i>&nbsp; VENGATESH</button>
+
+  <button onclick="change_theme2()" id="logo2" class="logo"><i class="fa-solid fa-user"></i>&nbsp; VENGATESH</button>
+  <ul>
+    <li><a id="nav-link1" href="#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a id="nav-link2"  href="#about" class="nav-link"><i class="fa-regular fa-address-card" style="padding-left: 10px;"></i> About</a></li>
+    <li><a  id="nav-link3" href="#resume" class="nav-link">&nbsp; <i class="fa-regular fa-file"></i>  Education</a></li>
+    <li><a id="nav-link4"  href="#skill" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Skill</a></li>
+    <li><a id="nav-link5"  href="#project" class="nav-link">&nbsp;<i class="fa-solid fa-sheet-plastic"></i> Project</a></li>
+    <li><a id="nav-link6"  href="#template" class="nav-link">&nbsp;<i class="fa-solid fa-tablet-screen-button"></i> Template</a></li>
+    <li> <a id="nav-link7"  href="#contact" class="nav-link"> <i class="fa-regular fa-envelope" style="padding-left: 10px;"></i> Contact</a></li>
+   </ul>
+</nav>
+<section id="home">
+    <table id="table1"> 
+        <tr>
+            <td>
+             <h1 id="h1"> Aspiring Python Full Stack Developer....!</h1>
+             <h2 id="home_para">"Unlocking Possibilities with Python Magic: From Code to Creativity,  Your Digital Dreams Come Alive. <br> Let's Build Tomorrow."</h2>
+             <table>
+              <tr>
+                <td><a href=""><button id="bn1" class="bn31"><i class="fa-brands fa-facebook-f"></i></button></a></td>
+                <td><a href=""><button id="bn2" class="bn31"><i class="fa-brands fa-instagram"></i></button></a></td>
+                <td><a href=""><button id="bn3" class="bn31"><i class="fa-brands fa-twitter"></i></button></a></td>
+                <td><a href=""><button id="bn4" class="bn31"><i class="fa-regular fa-envelope"></i></button></a></td>
+                <td><a href=""><button id="bn5"  class="bn31"><i class="fa-brands fa-whatsapp"></i></button></a></td>
+                <td><a href=""><button id="bn6" class="bn31"><i class="fa-brands fa-telegram"></i></button></a></td>
+                <td><a href=""><button id="bn7" class="bn31"><i class="fa-brands fa-youtube"></i></button></a></td>
+              </tr>
+             </table>
+              
+              </td>
+                <!-- <td><p><img src="./IMG_20231014_134548 (2).jpg" alt="" width="450px"  height="850px" style="margin-top: 400px;"></p></td> -->
+        </tr>
+        <tr><td><br></td></tr>
+      
+            
+        
+    </table>
+</section>
+<section id="about">
+  <div class="about_top"><h1>About Me</h1></div>
+  <div class="about_bot">
+    <div class="about_left">
+      <div id="name" class="name">
+        <div class="Name1"><i class="fa-solid fa-user"></i></div>
+        <div class="Name2">
+          <h2>Name :</h2>
+          <h3 id="Name2">Vengatesh S</h3>
+        </div>
+      </div>
+      <div  id="dob" class="dob">
+        <div class="Dob1"><i class="fa-solid fa-cake-candles"></i></div>
+        <div class="Dob2">
+          <h2>Date of Birth :</h2>
+          <h3 id="Dob2">24/10/2001</h3>
+        </div>
+      </div>
+      <div id="email" class="email">
+        <div class="Email1"><i class="fa-solid fa-envelope"></i></div>
+        <div class="Email2">
+          <h2>Email-Id :</h2>
+          <h3 id="Email2">vengatsrini2410@gmail.com</h3>
+        </div>
+      </div>
+      <div id="phone" class="phone">
+        <div class="Phone1"><i class="fa-solid fa-phone"></i></div>
+        <div class="Phone2">
+          <h2>Phone :</h2>
+          <h3 id="Phone2">9087366333</h3>  
+        </div>
+      </div>
+      <div id="add" class="address">
+        <div class="Add1"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="Add2">
+          <h2>Address :</h2>
+          <h3 id="Add2">Injambakkam, Chennai-115.</h3>
+        </div>
+      </div>
+     
+    </div>
+    <div class="about_right">
+      <div class="about" id="about_right">
+        Aspiring Python Full Stack Developer and My Name is <label for="" style="color:#ff00ee ;">Vengatesh S</label> and i am from Chennai, I Completed my Graduation BE Computer Science & Engneering in <label for="" style="color:#ff00ee ;">KCG College of Technology</label> and Also I have Completed Python Full Stack Development course in <label for="" style="color:#ff00ee ;">Q-Spiders Velachery</label>. I have Good Logical Thinking and I am self motivated Person and I have build many Templates which was helped me to get strong in Web Development and some of the Templates are added in the <a href="#template" for="" style="color:#ff00ee ;">Template Section</a> , Lastly i am Quick learner and i believe in learning from my past mistakes and experiences.
+
+      </div>
+      <div id="ab_bt" class="about_button">
+        <a href="https://docs.google.com/document/d/1RcykVsyle4ogiRVv1UW41SLqtJTL_NFtz0mUe7w2Mb0/edit?usp=sharing"><button>Download CV</button></a>
+      </div>
+    </div>
+  </div>
+
+            
+          
+  
+ 
+</section>
+<section id="resume">
+  <table >
+    <caption><h1>Education Details </h1></caption>
+    <tr><td><br></td></tr>
+    <tr>
+      <td>
+        <a href="https://www.qspiders.com" style="text-decoration: none;color: white;">
+          <fieldset class="box1" >
+            <table>
+              <tr>
+                <td><label id="q1">Q-Spiders :  (2024)</label></td>
+              </tr>
+              <tr>
+                <td colspan="2"><p id="q2">Completed Python FullStack Web Development In Q-Spiders and Got <sub>*</sub> Rating in the Final Mock.</p></td>
+              </tr>
+            </table>
+          </fieldset>
+        </a>
+      </td>
+      <td>
+       <a href="https://kcgcollege.ac.in/contact-us" style="text-decoration: none; color: white;">
+        <fieldset class="box2" >
+          <table>
+            <tr>
+              <td><label id="clg1">KCG College Of Technology :(2024)</label></td>
+            </tr>
+            <tr>
+              <td colspan="2"><p id="clg2">Completed BE Computer Science & Engneering  In KCG College Of Technology with Distinction and Got 80%(8.03 / 10) of CGPA.</p></td>
+            </tr>
+          </table>
+        </fieldset>
+       </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://www.nellainadarschool.com" style="text-decoration: none;color: white;">
+          <fieldset class="box2">
+            <table>
+              <tr>
+                <td><label id="sch1">Nellai Nadar Hr Sec School : (2020)</label></td>
+              </tr>
+              <tr>
+                <td colspan="2"><p id="sch2">Completed   12<sup>th</sup> Schooling in Nellai Nadar Higher Secondary School and Got 72.5% (435 / 600) in the public Examination.</p></td>
+              </tr>
+            </table>
+          </fieldset>
+        </a>
+      </td>
+      <td>
+       <a href="https://www.nellainadarschool.com" style="text-decoration: none;color: white;">
+        <fieldset class="box1">
+          <table>
+            <tr>
+              <td><label id="sch11">Nellai Nadar Hr Sec School : (2018)</label></td>
+            </tr>
+            <tr>
+              <td colspan="2"><p id="sch12">Completed   10<sup>th</sup> Schooling in Nellai Nadar Higher Secondary School and Got 75.2% (387 / 500) in the public Examination.</p></td>
+            </tr>
+          </table>
+        </fieldset>
+       </a>
+      </td>
+      <tr>
+        <tr>
+          <th colspan="2">
+            <div id="ab_bt" class="resume_button">
+              <a href="https://docs.google.com/document/d/1RcykVsyle4ogiRVv1UW41SLqtJTL_NFtz0mUe7w2Mb0/edit?usp=sharing"><button>Download CV</button></a>
+          </div></th>
+        </tr>
+    </tr>
+  </table>
+</section>
+<section id="skill">
+  <div class="title"><h1>Skill Set</h1></div>
+  <div class="Skills">
+    <div class="Skill1">
+      <div class="top">
+        <div class="image"><img src="./skills/python.png" alt="" width="180px"></div>
+        <div class="percent"><h5>80%</h5></div>
+      </div>
+      <div class="bottom"><h5 id="skill1">PYTHON</h5></div>
+    </div>
+    <div class="Skill1">
+      <div class="top">
+        <div class="image"><img src="./skills/c-removebg-preview.png" alt="" width="130px"></div>
+        <div class="percent"><h5>90%</h5></div>
+      </div>
+      <div class="bottom"><h5 id="skill2">C PROGRAMMING</h5></div>
+    </div>
+    <div class="Skill1">
+      <div class="top">
+        <div class="image"><img src="./skills/oracle.png" alt="" width="180px" style="padding-top: 20px;"></div>
+        <div class="percent"><h5>85%</h5></div>
+      </div>
+      <div class="bottom"><h5 id="skill3">ORACLE</h5></div>
+    </div>
+    <div class="Skill1">
+      <div class="top">
+        <div class="image"><img src="./skills/html-removebg-preview.png" alt="" width="150px"></div>
+        <div class="percent"><h5>70%</h5></div>
+      </div>
+      <div class="bottom"><h5 id="skill4">HTML</h5></div>
+    </div>
+    <div class="Skill1">
+      <div class="top">
+        <div class="image"><img src="./skills/css-removebg-preview.png" alt="" width="150px"></div>
+        <div class="percent"><h5>65%</h5></div>
+      </div>
+      <div class="bottom"><h5 id="skill5">CSS</h5></div>
+    </div>
+    <div class="Skill1">
+      <div class="top">
+        <div class="image"><img src="./skills/js.webp" alt="" width="150px"></div>
+        <div class="percent"><h5>50%</h5></div>
+      </div>
+      <div class="bottom"><h5 id="skill6">JAVASCRIPT</h5></div>
+    </div>
+    <div class="Skill1">
+      <div class="top">
+        <div class="image"><img src="./skills/django-removebg-preview.png" alt="" width="170px"></div>
+        <div class="percent"><h5>60%</h5></div>
+      </div>
+      <div class="bottom"><h5 id="skill7">DJANGO</h5></div>
+    </div>
+    <div class="Skill1">
+      <div class="top">
+        <div class="image"><img src="./skills/iot-removebg-preview.png" alt="" width="180px"></div>
+        <div class="percent"><h5>50%</h5></div>
+      </div>
+      <div class="bottom"><h5 id="skill8">IOT</h5></div>
+    </div>
+  <!-- 
+  <div class="skill">
+    <div class="skill1">
+      <div class="skill_title"><h2 id="skill1">PYTHON PROGRAMMING</h2></div>
+    <div class="main_line">
+      <div class="line_left">
+        <div class="per"></div>
+      </div>
+      <div class="line_mid">
+        <div class="round">70</div>
+      </div>
+      <div class="line_right">
+        <div class="rem"></div>
+      </div>
+    </div>
+    </div>
+    <div class="skill2">
+      <div class="skill_title"><h2 id="skill2">C PROGRAMMING</h2></div>
+    <div class="main_line">
+      <div class="line_left">
+        <div class="per"></div>
+      </div>
+      <div class="line_mid">
+        <div class="round">80</div>
+      </div>
+      <div class="line_right">
+        <div class="rem"></div>
+      </div>
+    </div>
+    </div>
+    <div class="skill3">
+      <div class="skill_title"><h2 id="skill3">ORACLE</h2></div>
+    <div class="main_line">
+      <div class="line_left">
+        <div class="per"></div>
+      </div>
+      <div class="line_mid">
+        <div class="round">75</div>
+      </div>
+      <div class="line_right">
+        <div class="rem"></div>
+      </div>
+    </div>
+    </div>
+    <div class="skill4">
+      <div class="skill_title"><h2 id="skill4">HTML</h2></div>
+    <div class="main_line">
+      <div class="line_left">
+        <div class="per"></div>
+      </div>
+      <div class="line_mid">
+        <div class="round">85</div>
+      </div>
+      <div class="line_right">
+        <div class="rem"></div>
+      </div>
+    </div>
+    </div>
+    <div class="skill5">
+      <div class="skill_title"><h2 id="skill5">CSS</h2></div>
+    <div class="main_line">
+      <div class="line_left">
+        <div class="per"></div>
+      </div>
+      <div class="line_mid">
+        <div class="round">70</div>
+      </div>
+      <div class="line_right">
+        <div class="rem"></div>
+      </div>
+    </div>
+    </div>
+    <div class="skill6">
+      <div class="skill_title"><h2 id="skill6">JAVASCRIPT</h2></div>
+    <div class="main_line">
+      <div class="line_left">
+        <div class="per"></div>
+      </div>
+      <div class="line_mid">
+        <div class="round">60</div>
+      </div>
+      <div class="line_right">
+        <div class="rem"></div>
+      </div>
+    </div>
+    </div>
+    <div class="skill7">
+      <div class="skill_title"><h2 id="skill7">DJANGO FRAMEWORK</h2></div>
+    <div class="main_line">
+      <div class="line_left">
+        <div class="per"></div>
+      </div>
+      <div class="line_mid">
+        <div class="round">70</div>
+      </div>
+      <div class="line_right">
+        <div class="rem"></div>
+      </div>
+    </div>
+    </div>
+    <div class="skill8">
+      <div class="skill_title"><h2 id="skill8">INTERNET OF THINGS</h2></div>
+    <div class="main_line">
+      <div class="line_left">
+        <div class="per"></div>
+      </div>
+      <div class="line_mid">
+        <div class="round">50</div>
+      </div>
+      <div class="line_right">
+        <div class="rem"></div>
+      </div>
+    </div>
+ 
+  </div> -->
+   
+  </section>
+  <section id="project">
+    <table>
+      <caption><h1>Project Details </h1></caption>
+      <tr><td><br></td></tr>
+      <tr>
+        <td>
+          
+            <a href="/SPOTSTAR/HTML/welcome.html" style="text-decoration: none;color: white;">
+              <fieldset class="Box1">
+                <table>
+                  <tr>
+                    <td><label id="pro11">SPOTSTAR :  (2024)</label></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><p id="pro1">This project is the combination of Spotify & Hotstart, by using this website customers can either listen music or Watch Movies.</p></td>
+                  </tr>
+                </table>
+              </fieldset>
+            </a>
+       
+        </td>
+        <td>
+          <fieldset class="Box2">
+            <table>
+              <tr>
+                <td><label id="pro21">Weather Adaptive Street Light : (2023)</label></td>
+              </tr>
+              <tr>
+                <td colspan="2"><p id="pro2">TamilNadu Skills Development Corporation released an free course for introduction to cloud and I developed this project by using IOT and IBM Waston Cloud Platform.</p></td>
+              </tr>
+            </table>
+          </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <fieldset class="Box2">
+            <table>
+              <tr>
+                <td><label id="pro31">Smart Parking System : (2022)</label></td>
+              </tr>
+              <tr>
+                <td colspan="2"><p id="pro3">During 5<sup>th</sup> Sem i did my Mini Project, which was Named as Smart Parking System using IOT and I am The Team Lead for this Project.</p></td>
+              </tr>
+            </table>
+          </fieldset>
+        </td>
+        <td>
+          <fieldset class="Box1">
+            <table>
+              <tr>
+                <td><label id="pro41">Web Page For Restaurant : (2018)</label></td>
+              </tr>
+              <tr>
+                <td colspan="2"><p id="pro4">After Learing Web Development, i developed an website for Restaurant, By Using this Website customers can order food and drinks.And this project is fully based onn Front-End.</p></td>
+              </tr>
+            </table>
+          </fieldset>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="template">
+    <div class="title"><h1>Templates</h1></div>
+    <div class="tem_main">
+      <div class="tem_sub1">
+        <a href="/Assignments/TEMPLATE/Google/google.html"><button style="width: 100%;height: 100%;opacity: 0;"></button></a>
+      </div>
+      <div class="tem_sub2">
+        <a href="/Assignments/TEMPLATE/Instagram/insta.html"><button style="width: 100%;height: 100%;opacity: 0;"></button></a>
+
+      </div>
+      <div class="tem_sub3">
+        <a href="/Assignments/TEMPLATE/Zomato/zomato.html"><button style="width: 100%;height: 100%;opacity: 0;"></button></a>
+        
+      </div>
+      <div class="tem_sub4">
+        <a href="/Assignments/TEMPLATE/Price/price.html"><button style="width: 100%;height: 100%;opacity: 0;"></button></a>
+
+      </div>
+      <div class="tem_sub1">
+        <a href="/Assignments/TEMPLATE/Google/google.html"><button style="width: 100%;height: 100%;opacity: 0;"></button></a>
+      </div>
+      <div class="tem_sub2">
+        <a href="/Assignments/TEMPLATE/Instagram/insta.html"><button style="width: 100%;height: 100%;opacity: 0;"></button></a>
+
+      </div>
+      <div class="tem_sub3">
+        <a href="/Assignments/TEMPLATE/Zomato/zomato.html"><button style="width: 100%;height: 100%;opacity: 0;"></button></a>
+        
+      </div>
+      <div class="tem_sub4">
+        <a href="/Assignments/TEMPLATE/Price/price.html"><button style="width: 100%;height: 100%;opacity: 0;"></button></a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+      <div class="con_left">
+        <h1>Contact</h1>
+        <form action="">
+          <table>
+            <tr>
+              <td><input id="user_name" type="text" placeholder="Your Name"></td>
+            </tr>
+            <tr>
+              <td><input id="user_email" type="text" placeholder="Your Email-Id"></td>
+            </tr>
+            <tr>
+              <td><input id="subject" type="text" placeholder="Subject"></td>
+            </tr>
+            <tr>
+              <td><textarea  name="" id="message" cols="60" rows="10" placeholder="Message"></textarea></td>
+            </tr>
+            <tr>
+              <td><button onclick="form1()">Submit Message</button><p id="para"></p></td>
+              
+            </tr>
+          </table>
+      </form>
+      </div>
+      <div class="con_right">
+        <div id="name" class="name">
+          <div class="Name"><i class="fa-solid fa-user"></i></div>
+          <div class="Name2">
+            <h2>Name :</h2>
+            <h3 id="Name2">Vengatesh S</h3>
+          </div>
+        </div>
+        <div  id="dob" class="dob">
+          <div class="Dob"><i class="fa-solid fa-cake-candles"></i></div>
+          <div class="Dob2">
+            <h2>Date of Birth :</h2>
+            <h3 id="Dob2">24/10/2001</h3>
+          </div>
+        </div>
+        <div id="email" class="email">
+          <div class="Email"><i class="fa-solid fa-envelope"></i></div>
+          <div class="Email2">
+            <h2>Email-Id :</h2>
+            <h3 id="Email2">vengatsrini2410@gmail.com</h3>
+          </div>
+        </div>
+        <div id="phone" class="phone">
+          <div class="Phone"><i class="fa-solid fa-phone"></i></div>
+          <div class="Phone2">
+            <h2>Phone :</h2>
+            <h3 id="Phone2">9087366333</h3>  
+          </div>
+        </div>
+        <div id="add" class="address">
+          <div class="Add"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="Add2">
+            <h2>Address :</h2>
+            <h3 id="Add2">Injambakkam, Chennai-115.</h3>
+          </div>
+        </div>
+       <div class="foot">
+        <p>Developed BY : <a href="#home" style="color: aqua;">Vengatesh S</a></p>
+        <p>copyright@2024</p>
+       </div>
+      </div>
+            
+    
+  </section>
+
+</body>
+</html>
